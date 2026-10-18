@@ -1,5 +1,14 @@
+modules = ["python-3.11"]
 [nix]
 channel = "stable-25_05"
 
 [agent]
 expertMode = true
+
+[[ports]]
+localPort = 8000
+externalPort = 80
+
+[[ports]]
+localPort = 8080
+externalPort = 8080
